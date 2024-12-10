@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>HTML Style Guide and Coding Conventions</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <h1>HTML Tutorial Project</h1>
+    <h2>by Ninh Nguyen</h2>
+    <h3>with guidance from W3</h3> 
+    <p style="color:antiquewhite;">The DOCTYPE declaration represents the document type, 
+        and helps browsers to display web pages correctly.</p>
+    <p>HTML headings are defined with the "h1" to "h6" tags. 
+        "h1" defines the most important heading. 
+        "h6" defines the least important heading: </p>
+    <p>HTML links are defined with the "a" tag while image is the img tag: </p>
+    <p>Example: </p>
+    <a href="https://www.w3schools.com" rel="noopener" target="_blank">w3schools homepage</a>
+    <img src="./image/w3schools.jpg" alt="W3Schools.com" width="104" height="142"> 
+    <p>The "br" tag defines a line break, and is an empty element without a closing tag: </p>
+    <br>
+    <hr>
+
+    <h2>Chapter Summary</h2>
+    <p>
+        All HTML elements can have attributes:
+
+        - The href attribute of "a" specifies the URL of the page the link goes to
+        - The src attribute of "img" specifies the path to the image to be displayed
+        - The width and height attributes of "img" provide size information for images
+        - The alt attribute of "img" provides an alternate text for an image
+        - The style attribute is used to add styles to an element, such as color, font, size, and more
+        - The lang attribute of the "html" tag declares the language of the Web page
+        - The title attribute defines some extra information about an element
+    </p>
+    <hr>
+
+    <pre>
+        The HTML "pre" element defines preformatted text.
+
+            The text inside a "pre" element is displayed in a fixed-width font (usually Courier), 
+            and it preserves both spaces and line breaks:
+    </pre>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+
+        - Use the style attribute for styling HTML elements
+        - Use background-color for background color
+        - Use color for text colors
+
+        - Use font-family for text fonts
+        - Use font-size for text sizes
+
+        - Use text-align for text alignment
+    </pre>
+    <hr>
+
+    <b>This text is bold</b>
+    <strong>This text is important!</strong>
+    <p>Tip: The "i" tag is often used to indicate a technical term, 
+        a phrase from another language, a thought, a ship name, etc.</p>
+    <i>This text is italic</i> 
+    <p>Tip: A screen reader will pronounce the words in "em" with an emphasis, using verbal stress.</p>
+    <em>This text is emphasized</em>
+    <p>The HTML "mark" element defines text that should be marked or highlighted:</p>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+    <pre>
+        HTML Text Formatting Elements
+    Tag 	Description
+    "b" 	-> Defines bold text
+    "em" 	-> Defines emphasized text 
+    "i" 	-> Defines a part of text in an alternate voice or mood
+    "small" -> Defines smaller text
+    "strong" -> Defines important text
+    "sub" 	-> Defines subscripted text
+    "sup" 	-> Defines superscripted text
+    "ins" 	-> Defines inserted text
+    "del" 	-> Defines deleted text
+    "mark" 	-> Defines marked/highlighted text
+    </pre>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    Here is a quote from WWF's website:
+
+    For 60 years, WWF has worked to help people and nature thrive. 
+    As the world's leading conservation organization, WWF works in nearly 100 countries. 
+    At every level, we collaborate with people around the world to develop and deliver 
+    innovative solutions that protect communities, 
+    wildlife, and the places in which they live.
+    </blockquote>
+
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p> 
+
+    <p>Tip: Use the global title attribute to show the description for the abbreviation/acronym 
+        when you mouse over the element.</p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> 
+
+    <address>
+        Written by Ninh Nguyen with guidance from W3 school<br>
+        Visit the site at:<br>
+        https://www.w3schools.com<br>
+        Created by 	Refsnes Data AS
+        </address> 
+    <br>
+    <img src="./image/the_scream.jpg" width="220" height="277" alt="The Scream">
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+        - Use the HTML style attribute for inline styling
+        - Use the HTML "style" element to define internal CSS
+        - Use the HTML "link" element to refer to an external CSS file
+        - Use the HTML "head" element to store "style" and "link" elements
+
+        - Use the CSS color property for text colors
+        - Use the CSS font-family property for text fonts
+        - Use the CSS font-size property for text sizes
+        - Use the CSS border property for borders
+        - Use the CSS padding property for space inside the border
+        - Use the CSS margin property for space outside the border
+    </pre>
+    <hr>
+
+    <h2>Link to an Email Address</h2>
+    <br>
+    <p>To create a link that opens in the user's email program (to let them send a new email), 
+        use mailto: inside the href attribute: </p>
+    <p><a href="mailto:yourmail@gmail.com">Send email</a></p>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+        - Use the "a" element to define a link
+        - Use the href attribute to define the link address
+        - Use the target attribute to define where to open the linked document
+        - Use the "img" element (inside "a") to use an image as a link
+        - Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+    </pre>
+    <hr>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+        - Use the id attribute (id="value") to define bookmarks in a page
+        - Use the href attribute (href="#value") to link to the bookmark
+    </pre>
+    <hr>
+
+    <figure>
+        <figcaption>(Sample Images)</figcaption>
+        <picture>
+        <img src="./image/pic_trulli.jpg" alt="Trulli" width="500" height="333">
+        <figcaption>Trulli</figcaption>
+        <img src="./image/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+        <figcaption>Girl in a Jacket</figcaption>
+        <img src="./image/img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+        <figcaption>Flowers in Chania</figcaption>
+        </picture>
+    </figure>
+
+    <pre>
+        <h2>Common Image Formats</h2>
+
+    Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):
+
+    Abbreviation 	File Format                 File Extension
+
+    APNG 	Animated Portable Network Graphics 	-> .apng
+    GIF 	Graphics Interchange Format 	        -> .gif
+    ICO 	Microsoft Icon 	                        -> .ico, .cur
+    JPEG 	Joint Photographic Expert Group image 	-> .jpg, .jpeg, .jfif, .pjpeg, .pjp
+    PNG 	Portable Network Graphics 	        -> .png
+    SVG 	Scalable Vector Graphics 	        -> .svg
+    </pre>
+    <hr>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul> 
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol> 
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl> 
+
+    <pre>
+        Tag 	Description
+    "ul" 	Defines an unordered list
+    "ol" 	Defines an ordered list
+    "li" 	Defines a list item
+    "dl" 	Defines a description list
+    "dt" 	Defines a term in a description list
+    "dd" 	Describes the term in a description list
+    </pre>
+
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, 
+            with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, 
+            its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div> 
+
+    <pre>
+        <h2>Chapter Summary</h2>
+
+        - A block-level element always starts on a new line and takes up the full width available
+        - An inline element does not start on a new line and it only takes up as much width as necessary
+        - The "div" element is a block-level and is often used as a container for other HTML elements
+        - The "span" element is an inline container used to mark up a part of a text, or a part of a document
+    </pre>
+    <hr>
+    <br>
+
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    
+    <div class="city">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+    
+    <div class="city">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div> 
+
+    <pre>
+        <h2>Chapter Summary</h2>
+
+        - The HTML class attribute specifies one or more class names for an element
+        - Classes are used by CSS and JavaScript to select and access specific elements
+        - The class attribute can be used on any HTML element
+        - The class name is case sensitive
+        - Different HTML elements can point to the same class name
+        - JavaScript can access elements with a specific class name with the getElementsByClassName() method
+    </pre>
+    <hr>
+    <br>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+
+        - The id attribute is used to specify a unique id for an HTML element
+        - The value of the id attribute must be unique within the HTML document
+        - The id attribute is used by CSS and JavaScript to style/select a specific element
+        - The value of the id attribute is case sensitive
+        - The id attribute is also used to create HTML bookmarks
+        - JavaScript can access an element with a specific id with the getElementById() method
+    </pre>
+    <hr>
+    <br>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+
+        - The HTML "iframe" tag specifies an inline frame
+        - The src attribute defines the URL of the page to embed
+        - Always include a title attribute (for screen readers)
+        - The height and width attributes specify the size of the iframe
+        - Use border:none; to remove the border around the iframe
+    </pre>
+    <hr>
+    <br>
+
+    <img src="./image/mountain.jpg" alt="mountain" width="304" height="228">
+
+    <h2>Best Practice</h2>
+
+        <p>It is best practice to use relative file paths (if possible).
+        
+        When using relative file paths, your web pages will not be bound to your current base URL. 
+        All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.
+    </p>
+
+    <pre>
+        <h1>Meta Example</h1>
+        - meta charset="UTF-8" 
+        - meta name="description" content="Free Web tutorials" 
+        - meta name="keywords" content="HTML, CSS, JavaScript" 
+        - meta name="author" content="John Doe" 
+    </pre>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+
+        - The "head" element is a container for metadata (data about data)
+        - The "head" element is placed between the "html" tag and the "body" tag
+        - The "title" element is required and it defines the title of the document
+        - The "style" element is used to define style information for a single document
+        - The "link" tag is most often used to link to external style sheets
+        - The "meta" element is typically used to specify the character set, page description, 
+        keywords, author of the document, and viewport settings
+        - The "script" element is used to define client-side JavaScripts
+        - The "base" element specifies the base URL and/or target for all relative URLs in a page
+    </pre>
+    <hr>
+    <br>
+
+    <pre>
+        <h2>Chapter Summary</h2>
+
+        - The "kbd" element defines keyboard input
+        - The "samp" element defines sample output from a computer program
+        - The "code" element defines a piece of computer code
+        - The "var" element defines a variable in programming or in a mathematical expression
+        - The "pre" element defines preformatted text
+    </pre>
+    <hr>
+    <br>
+
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization 
+            working on issues regarding the conservation, research and restoration of the environment, 
+            formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+        
+        <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. 
+            The well-known panda logo of WWF originated from a panda named Chi Chi 
+            that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section> 
+
+    <article>
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, 
+            released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        
+        <article>
+        <h2>Mozilla Firefox</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. 
+            Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        
+        <article>
+        <h2>Microsoft Edge</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. 
+            Microsoft Edge replaced Internet Explorer.</p>
+    </article> 
+
+    <article>
+        <header>
+          <h1>What Does WWF Do?</h1>
+          <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+        and build a future in which humans live in harmony with nature.</p>
+    </article> 
+
+    <h2>HTML Forms</h2>
+
+    <form action="" style="color: white;">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form> 
+    
+    <h2>Radio Buttons</h2>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form style="color: white;">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form> 
+
+    <h2>Checkboxes</h2>
+    
+    <form action="" style="color: white;">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form> 
+
+    <h2>The select Element</h2>
+
+    <p>The select element defines a drop-down list:</p>
+
+    <form action="" style="color: white;">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+    <br>
+    <br>
+
+    <textarea title="message" name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+    </textarea> 
+
+    <h2>Grouping Form Data with Fieldset</h2>
+
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+    <form action="" style="color: white;">
+    <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+    </form>
+
+</body>
+
+<footer>
+    <p>Author: Ninh Nguyen</p>
+</footer> 
+
+</html> 
